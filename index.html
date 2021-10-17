@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
  <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1"/>
-     <title>EU Small Online Businesses</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1"/>
+    <title>EU Small Online Businesses</title>
      <style>
          html 
         {
@@ -17,16 +17,16 @@
          height: 100%; 
          border: none;
         }
-         
+
          iframe 
-{
- display: block; 
- width: 100%; 
- border: none; 
- overflow-y: auto; 
- overflow-x: hidden;
-}
-     
+        {
+         display: block; 
+         width: 100%; 
+         border: none; 
+         overflow-y: auto; 
+         overflow-x: hidden;
+        }
+
      </style>
  </head>
   <body>
@@ -39,20 +39,5 @@
     height="100%" 
     scrolling="auto">Loading
     </iframe>
-    <script>
-      const main = (() => {
-        console.log("loading page");
-        const f = document.querySelector("iframe");
-        f.onload = (e) => {
-          console.log("iframe onload");
-          const fw = f.contentWindow;
-          if (fw.length > 0) console.info("logged in");
-          else {
-            alert("Please Login!");
-            window.location = "https://accounts.google.com";
-          }
-        };
-      })();
-    </script>
   </body>
 </html>
