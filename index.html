@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
  <head>
-   <base target="_top">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1"/>
     <title>EU Small Online Businesses</title>
@@ -32,7 +31,7 @@
  </head>
   <body>
     <iframe
-      src="https://script.google.com/macros/s/AKfycbwP5dbQGvOAqXSJuMciZqsPCCY5y5CKL9cO-Nnufp79jlrbmIlKdjg9zRjBqwxXisI8/exec"
+      src="https://script.google.com/macros/s/AKfycbxhYMw9rw7vvuqgzJzkfBAO_yefhB9WeBY0iw96vswsct50h6nxIuo1au8hZsIv9JGC/exec"
        frameborder="0" 
     marginheight="0" 
     marginwidth="0" 
@@ -40,21 +39,6 @@
     height="100%" 
     scrolling="auto">Loading
     </iframe>
-    <script>
-      const handleMessage = function(event) {
-    if (
-      event.origin !==
-      'https://AKfycbxn3NSZVMB_g-5JFuKRKZ0bQQYg9W2g7IR0w4XS6gQoDR9Dk3SDkZTN6fAI8c7Qxd-T-script.googleusercontent.com'
-    ) {
-      alert('Origin Disallowed');
-      return;
-    }
-      // if origin is ok this just open link in current frame.
-      document.querySelector('iframe').src = event.data;
-      alert('sdf');
-  };
 
-window.addEventListener('message', handleMessage);
-      </script>
   </body>
 </html>
